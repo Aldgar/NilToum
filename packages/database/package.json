@@ -1,0 +1,18 @@
+{
+  "name": "@repo/database",
+  "version": "0.1.0",
+  "main": "./generated/prisma/index.js",
+  "types": "./generated/prisma/index.d.ts",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0"
+  }
+}
